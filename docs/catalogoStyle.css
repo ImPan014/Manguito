@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+}
+body{
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+}
+header{
+    background-color: rgb(225,225,225);
+}
+header .logo{
+    font-size: 3em;
+    font-weight: bold;
+    color: #f2a74b;
+    margin: 0px 25px;
+    padding: 25px 30px;
+}
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+header a{
+	padding: 5px 25px;
+	font-weight: bold;
+	text-decoration: none;
+}
+header a:hover{
+    Color: #f27329;
+}
+header .contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contenedor{
+	max-width: 1200px;
+	margin:auto;
+}
+.uno{
+    background-color: white;
+    margin-bottom: 30px;
+}
+
+.dos{
+    background-color: #8d604b;
+    margin-bottom: 30px;
+}
+.tres{
+    background-color: white;
+    margin-bottom: 30px;
+}
+.nombreProducto{
+    color: white;
+    background-color: #f27329;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+.producto{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-basis: 100%;
+}
+.uno .producto .image{
+    background-image: url("Productos/TeJaztea.png");
+    background-position: center center;
+    width: 100%;
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+    height: 30vh;
+}
+.dos .producto .image{
+    background-image: url("Productos/SabritasOriginales.png");
+    background-position: center center;
+    width: 100%;
+    background-size: 30% 100%;
+    background-repeat: no-repeat;
+    height: 30vh;
+}
+.tres .producto .image{
+    background-image: url("Productos/PRINCIPE.png");
+    background-position: center center;
+    width: 100%;
+    background-size: 30% 100%;
+    background-repeat: no-repeat;
+    height: 30vh;
+}
+button{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: #f2a74b;
+    
+}
+#catalogo{
+    padding-top: 20px;
+}
+button:hover{
+    background-color: #f27329;
+}
+@media (min-width: 870px){
+	header{
+		position: fixed;
+		width: 100%;
+	}
+	header .contenedor{
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	header nav{
+		flex-direction: row;
+		padding-bottom: 0px;
+	}
+    #catalogo{
+        padding-top: 200px;
+    }
+    .uno .producto .image{
+        background-size: 20% 100%;
+    }
+    .dos .producto .image{
+        background-size: 10% 100%;
+    }
+    .tres .producto .image{
+        background-size: 20% 100%;
+    }
+    .nombreProducto{
+        width: 30%;
+    }
+}
