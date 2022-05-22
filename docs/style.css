@@ -38,6 +38,7 @@ header nav{
 header a{
 	padding: 5px 25px;
 	font-weight: bold;
+	text-decoration: none;
 }
 
 header a:hover{
@@ -88,10 +89,6 @@ button:hover{
 	background-size: cover;
 	background-position: center center;
 }
-#Catalogo{
-	
-}
-
 #Catalogo .contenedor{
 	text-align: center;
 	padding:100px 12px;
@@ -104,10 +101,6 @@ button:hover{
 #Descuentos .contenedor{
 	text-align: center;
 	padding:100px 12px;
-}
-
-#Especial{
-	
 }
 
 #Especial .contenedor{
@@ -124,7 +117,7 @@ button:hover{
 	padding:100px 12px;
 }
 
-@media (min-width: 720px){
+@media (min-width: 870px){
 	header{
 		position: fixed;
 		width: 100%;
